@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #ededed;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;
+    /*font-style: italic;*/
+    align-items: center;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #ededed;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 12px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #341f97;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#btn-cancelar {
+    background-color: #5f27cd;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-width: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
+
+.overlay-imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
